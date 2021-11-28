@@ -137,7 +137,7 @@ function writeToFile(fileName, data) {
     
           resolve({
             ok: true,
-            message: 'File created!'
+            message: 'Readme file created!'
           });
         });
     });
@@ -145,7 +145,10 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions);
+    inquirer.prompt(questions)
+    .then(function (userInput) {
+        writeToFile("README", generateMarkdown(userInput))
+    })
 };
 
 // Function call to initialize app
