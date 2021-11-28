@@ -1,3 +1,4 @@
+
   # Professional Readme Generator
 
   ## Table of Contents 
@@ -25,5 +26,6 @@
   ## Tests:
   Details for testing here.
   ## Contact Info:
- - Github: [ebtaterbug](https://github.com/ebtaterbug)
- - Email: ityjoseph@gmail.com
+  Github: [ebtaterbug](https://github.com/ebtaterbug)
+
+  Email: ityjoseph@gmail.com

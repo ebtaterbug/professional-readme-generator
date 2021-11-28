@@ -1,8 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(data) {
-  if (data.licensing) {
-    // return license badge
+function renderLicenseBadge(licensing) {
+  if (licensing !== 'none') {
+    return `![License](https://img.shields.io/badge/license-${licensing}-blue)`;
   } else {
     return "";
   }
@@ -10,33 +10,35 @@ function renderLicenseBadge(data) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(data) {
-  if (data.licensing) {
-    // return license link
+function renderLicenseLink(licensing) {
+  
+  if (licensing == 'MIT') {
+    return 'https://choosealicense.com/licenses/mit/';
+  } else if (licensing == 'Unlicense') {
+    return 'https://choosealicense.com/licenses/unlicense/';
+  } else if (licensing == 'Apache') {
+    return 'https://choosealicense.com/licenses/apache-2.0/';
+  } else if (licensing == 'GNUAGPLv3') {
+    return 'https://choosealicense.com/licenses/agpl-3.0/';
+  } else if (licensing == 'GNUGPLv3') {
+    return 'https://choosealicense.com/licenses/gpl-3.0/';
+  } else if (licensing == 'GNULGPLv3') {
+    return 'https://choosealicense.com/licenses/lgpl-3.0/';
+  } else if (licensing == 'Mozilla') {
+    return 'https://choosealicense.com/licenses/mpl-2.0/';
+  } else if (licensing == 'Boost') {
+    return 'https://choosealicense.com/licenses/bsl-1.0/';
   } else {
     return "";
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(data) {
-  if (data.licensing) {
-    // return license section of README
-  } else {
-    return "";
-  }
-}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ## Licensing:
-  ![license](https://img.shields.io/badge/license-${data.licensing}-blue)
-  ## Description:
-  ${data.description}
   ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
@@ -44,19 +46,24 @@ function generateMarkdown(data) {
   - [Contribution](#contribution)
   - [Testing](#testing)
   - [Contact-info](#contact-info)
+  ## Licensing:
+  ${renderLicenseBadge(data.licensing)}
+
+  To view the license details click [here](${renderLicenseLink(data.licensing)}).
+
+  ## Description:
+  ${data.description}
   ## Installation:
   ${data.installation}
   ## Usage:
   ${data.usage}
-  ## License:
-  ${data.licensing}
   ## Contributing:
   ${data.contribution}
   ## Tests:
   ${data.testing}
   ## Contact Info:
-  Github: [${data.github}](https://github.com/${data.github})
-  Email: ${data.email}`;
+  - Github: [${data.github}](https://github.com/${data.github})
+  - Email: ${data.email}`;
 }
 
 module.exports = generateMarkdown;
