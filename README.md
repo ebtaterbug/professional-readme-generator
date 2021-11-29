@@ -1,29 +1,16 @@
-  # Professional Readme Generator
+# Professional Readme Generator
 
-  ## Table of Contents 
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [Testing](#testing)
-  - [Contact-info](#contact-info)
-  ## Licensing:
-  ![License](https://img.shields.io/badge/license-MIT-blue)
+## Description:
+  
+This application uses Node.js to create a professional README file for your projects. By using the terminal, users can specify what information to be included. The README generator will then do the rest of the details and structuring for you.
 
-  To view the license details click [here](https://choosealicense.com/licenses/mit/).
+## Installation:
+- Clone repository
+- Install inquirer.js  (Details about inquirer [here](https://www.npmjs.com/package/inquirer))
 
-  ## Description:
-  Description here.
-  ## Installation:
-  Instructions to install here.
-  ## Usage:
-  directions on how to use here.
-  ## License:
-  MIT
-  ## Contributing:
-  Directions for contributing here.
-  ## Tests:
-  Details for testing here.
-  ## Contact Info:
- - Github: [ebtaterbug](https://github.com/ebtaterbug)
- - Email: ityjoseph@gmail.com
+
+## Usage:
+In order to use Professional README Generator you must open the terminal and type "node index.js". This will begin the user prompts and once done create the README file in the dist folder of the repository. 
+
+For an example watch [this](https://watch.screencastify.com/v/myhgmlGe5cDlhWUsxLAg) video.
+

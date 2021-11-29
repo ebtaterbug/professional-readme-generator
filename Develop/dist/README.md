@@ -1,5 +1,5 @@
 
-  # Professional Readme Generator
+  # Example README
 
   ## Table of Contents 
   - [Description](#description)
@@ -14,18 +14,15 @@
   To view the license details click [here](https://choosealicense.com/licenses/mit/).
 
   ## Description:
-  Description here.
+  Description Here
   ## Installation:
-  Instructions to install here.
+  Install Instructions
   ## Usage:
-  directions on how to use here.
-  ## License:
-  MIT
+  Directions for usage
   ## Contributing:
-  Directions for contributing here.
+  Directions for contributing
   ## Tests:
-  Details for testing here.
+  Details for testing
   ## Contact Info:
-  Github: [ebtaterbug](https://github.com/ebtaterbug)
-
-  Email: ityjoseph@gmail.com
+  - Github: [ebtaterbug](https://github.com/ebtaterbug)
+  - Email: ityjoseph@gmail.com
